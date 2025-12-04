@@ -15,7 +15,7 @@ body {
 main {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr, 2fr;
+    grid-template-columns: 400px 2fr;
     grid-template-rows: auto;
     grid-template-areas: 
         "contact exp"
@@ -190,7 +190,6 @@ img {
     background-color: #2a354d;
     margin: 5px;
     padding: 10px;
-    width: 100%;
 }
 
 .contact img {
@@ -206,12 +205,54 @@ img {
 
 .contact h4 {
     margin-top: 15px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .contact p {
     font-size: 1.2em;
     margin: 5px;
+}
+
+
+#phone, #mail {
+    display: flex;
+}
+
+#phone, #mail img {
+    width: 8%;
+}
+
+form {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 20px;
+    gap: 10px;
+    border: 2px solid black;
+    background-color: #998c68;
+}
+
+
+form h3 {
+    text-align: center;
+}
+
+#valid_rgpd {
+    font-size: 0.8em;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5px;
+    gap: 8px;
+    text-align: justify;
+}
+
+#envoyer {
+    width: 30%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 footer {

@@ -130,11 +130,38 @@
             <img src="assets/images/Photo_profil.webp" alt="Photo de Profil - TAQUET Renaud">
             <h4>Renaud TAQUET</h4>
             <p>26 ans</p>
+            <div id="phone">
+                <img src="assets/images/phone.svg" alt="Téléphone">
                 <p>**.**.**.**.**</p>
+            </div>
+            <div id="mail">
+                <img src="assets/images/mail.svg" alt="Adresse Mail">
                 <p>*************@*******.**</p>
+            </div>
             
             <form action="#" method="POST">
-                <label for="Name">Nom</label>
+                <h3>Formulaire de contact</h3>
+                <label for="Name">Nom* :</label>
+                <input type="text" id="Name" name="Name" required="required">
+
+                <label for="fName">Prénom* :</label>
+                <input type="text" id="fName" name="fName" required="required">
+
+                <label for="agency">Entreprise :</label>
+                <input type="text" id="agency" name="agency">
+
+                <label for="object">Objet* :</label>
+                <input type="text" id="object" name="object" required="required">
+
+                <label for="message">Message* :</label>
+                <textarea id="message" rows="15">Tapez votre message...</textarea>
+
+                <div id="valid_rgpd">
+                    <input type="checkbox" id="RGPD" name="valid" required="required">
+                    <label for="RGPD">J'accepte que mes données soient stockées et traitées en accord avec la politique de confidentialité</label>
+                </div>
+                    
+                <button id="envoyer" type="submit" value="envoyer">Envoyer</button>
             </form>
         </section>
     </main>
