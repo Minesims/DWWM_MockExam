@@ -4,14 +4,19 @@
 }
 
 body {
+    height: 100vh;
     font-family: "Sansation", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #1d2535;
+    color: #fff;
 }
 
 header {
     text-align: center;
-    margin: 50px;
+    background-image: url(assets/images/Background_stars.jpg);
+    background-size: cover;
+    color: #fff;
 }
 
 h1 {
@@ -19,6 +24,28 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 5rem;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 4em;
+    margin-left: 40px;
+    padding-bottom: 20px;
+    font-family: "Caramel", cursive;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+#name {
+    padding-bottom: 50px;
+}
+
+nav {
+    background: linear-gradient(#040a15, #151b26);
+    border-top: 1px solid #fff;
 }
 
 nav > ul{
@@ -28,5 +55,112 @@ nav > ul{
     justify-content: space-around;
     gap: 15px;
     margin: 25px auto;
+    padding-bottom: 20px;
     width: 60%;
+}
+
+a {
+    text-decoration: none;
+    color: #998c68;
+}
+
+li > a {
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.6s ease;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+li > a:hover {
+    background: rgba(255, 255, 255, 0.3)
+}
+
+#experience {
+    background-color: #1d2535;
+    padding: 50px;
+}
+
+#education {
+    background-color: #070e1a;
+    padding: 50px;
+}
+
+#competences {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template: 
+        "title title"
+        "front back"
+        "design doc";
+    background-color: #151b26;
+    padding: 50px;
+    gap: 15px;
+}
+
+#title {
+    grid-area: title;
+}
+
+.front {
+    grid-area: front;
+}
+
+.back {
+    grid-area: back;
+}
+
+.design {
+    grid-area: design;
+}
+
+.doc {
+    grid-area: doc;
+}
+
+#projets {
+    background-color: #1d2535;
+    padding: 75px;
+}
+
+.proj_block {
+    text-align: justify;
+    background-color: #2a354d;
+    padding: 15px;
+}
+
+.sequoia {
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+}
+
+.portfolio {
+    display: flex;
+    padding: 15px;
+    gap: 25px;
+}
+
+#portfolio_h3 {
+    text-align: end;
+}
+
+.sequoia p, .portfolio p {
+    align-self: flex-end;
+}
+
+img {
+    width: 40%;
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #070e1a;
+}
+
+#legal_mentions {
+    margin-top: 15px;
+    text-decoration: underline;
 }
