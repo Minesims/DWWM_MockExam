@@ -259,11 +259,11 @@ img {
 }
 
 
-#phone, #mail {
+#phone, #email {
     display: flex;
 }
 
-#phone, #mail img {
+#phone, #email img {
     width: 8%;
 }
 
