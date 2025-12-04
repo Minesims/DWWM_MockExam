@@ -140,24 +140,30 @@
             
             <form id="form_contact" action="#" method="POST">
                 <h3>Formulaire de contact</h3>
-                <label for="Name">Nom* :</label>
-                <input type="text" id="Name" name="Name" required="required">
+                <label for="Name" aria-label="Name">Nom* :</label>
+                <input type="text" id="Name" name="Name" required="required" aria-required="true">
 
-                <label for="fName">Prénom* :</label>
-                <input type="text" id="fName" name="fName" required="required">
+                <label for="fName" aria-label="fName">Prénom* :</label>
+                <input type="text" id="fName" name="fName" required="required" aria-required="true">
 
-                <label for="agency">Entreprise :</label>
+                <label for="agency" aria-label="agency">Entreprise :</label>
                 <input type="text" id="agency" name="agency">
 
-                <label for="object">Objet* :</label>
-                <input type="text" id="object" name="object" required="required">
+                <label for="num" aria-label="num">Téléphone :</label>
+                <input type="tel" id="num" name="num" aria-invalid="false">
 
-                <label for="message">Message* :</label>
-                <textarea id="message" rows="15">Tapez votre message...</textarea>
+                <label for="mail" aria-label="mail">Mail* :</label>
+                <input type="email" id="mail" name="mail" required="required" aria-required="true" aria-invalid="false">
+
+                <label for="object" aria-label="object">Objet* :</label>
+                <input type="text" id="object" name="object" required="required" aria-required="true">
+
+                <label for="message" aria-label="message">Message* :</label>
+                <textarea id="message" rows="15" required="required" aria-required="true">Tapez votre message...</textarea>
 
                 <div id="valid_rgpd">
-                    <input type="checkbox" id="RGPD" name="valid" required="required">
-                    <label for="RGPD">J'accepte que mes données soient stockées et traitées en accord avec la politique de confidentialité</label>
+                    <input type="checkbox" id="RGPD" name="valid" required="required" aria-required="true">
+                    <label for="RGPD" aria-label="RGPD">J'accepte que mes données soient stockées et traitées en accord avec la politique de confidentialité</label>
                 </div>
                     
                 <button id="envoyer" type="submit" value="envoyer">Envoyer</button>
