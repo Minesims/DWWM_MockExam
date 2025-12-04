@@ -149,7 +149,7 @@ li > a:hover {
     min-width: 350px;
 }
 
-.progress h4, p {
+.progress > h4, .progress > p {
     text-align: right;
 }
 
@@ -211,7 +211,7 @@ li > a:hover {
     text-align: end;
 }
 
-.sequoia p, .portfolio p {
+.sequoia > p, .portfolio > p {
     align-self: flex-end;
 }
 
@@ -247,7 +247,7 @@ img {
     font-size: 1.3em;
 }
 
-.contact p {
+.contact > p {
     font-size: 1.2em;
     margin: 5px;
 }
