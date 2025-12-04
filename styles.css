@@ -12,6 +12,18 @@ body {
     color: #fff;
 }
 
+main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr, 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "contact exp"
+        "contact educ"
+        "contact comp"
+        "contact proj";
+}
+
 header {
     text-align: center;
     background-image: url(assets/images/Background_stars.jpg);
@@ -77,16 +89,28 @@ li > a:hover {
 }
 
 #experience {
+    grid-area: exp;
     background-color: #1d2535;
     padding: 50px;
 }
 
+/* SECTION EDUCATION */
+
 #education {
+    grid-area: educ;
     background-color: #070e1a;
     padding: 50px;
 }
 
+.edu_block {
+    display: flex;
+    width: 100%;
+}
+
+/* SECTION COMPETENCES */
+
 #competences {
+    grid-area: comp;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -119,7 +143,10 @@ li > a:hover {
     grid-area: doc;
 }
 
+/* SECTION PROJETS */
+
 #projets {
+    grid-area: proj;
     background-color: #1d2535;
     padding: 75px;
 }
@@ -152,6 +179,39 @@ li > a:hover {
 
 img {
     width: 40%;
+}
+
+/* SECTION CONTACT */
+
+.contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    background-color: #2a354d;
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact img {
+    width: 95%;
+    border-radius: 50%;
+}
+
+.contact > h2 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 65px;
+}
+
+.contact h4 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin: 5px;
 }
 
 footer {
